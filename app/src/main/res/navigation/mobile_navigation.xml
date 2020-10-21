@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.turismo.malagapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_playas"
+        android:name="com.turismo.malagapp.ui.playas.PlayasFragment"
+        android:label="@string/menu_playas"
+        tools:layout="@layout/playas_fragment" />
+
+    <fragment
+        android:id="@+id/nav_museos"
+        android:name="com.turismo.malagapp.ui.museos.MuseosFragment"
+        android:label="@string/menu_museos"
+        tools:layout="@layout/museos_fragment" />
+    <fragment
+        android:id="@+id/nav_monumentos"
+        android:name="com.turismo.malagapp.ui.monumentos.MonumentosFragment"
+        android:label="@string/menu_monumentos"
+        tools:layout="@layout/monumentos_fragment" />
+    <fragment
+        android:id="@+id/nav_cultura"
+        android:name="com.turismo.malagapp.ui.cultura.CulturaFragment"
+        android:label="@string/menu_cultura"
+        tools:layout="@layout/cultura_fragment" />
+    <fragment
+        android:id="@+id/nav_naturaleza"
+        android:name="com.turismo.malagapp.ui.naturaleza.NaturalezaFragment"
+        android:label="@string/menu_naturaleza"
+        tools:layout="@layout/naturaleza_fragment" />
+    <fragment
+        android:id="@+id/nav_otros"
+        android:name="com.turismo.malagapp.ui.otros.OtrosFragment"
+        android:label="@string/menu_otros"
+        tools:layout="@layout/otros_fragment" />
+    <fragment
+        android:id="@+id/nav_centros_comerciales"
+        android:name="com.turismo.malagapp.ui.centroscomerciales.CentrosComercialesFragment"
+        android:label="@string/menu_centros_comerciales"
+        tools:layout="@layout/centros_comerciales_fragment" />
+    <fragment
+        android:id="@+id/nav_restaurantes"
+        android:name="com.turismo.malagapp.ui.restaurantes.RestaurantesFragment"
+        android:label="@string/menu_restaurantes"
+        tools:layout="@layout/restaurantes_fragment" />
+    <fragment
+        android:id="@+id/nav_luxury"
+        android:name="com.turismo.malagapp.ui.luxury.LuxuryFragment"
+        android:label="@string/menu_luxury"
+        tools:layout="@layout/luxury_fragment" />
+    <fragment
+        android:id="@+id/nav_alojamientos"
+        android:name="com.turismo.malagapp.ui.alojamientos.AlojamientosFragment"
+        android:label="@string/menu_alojamientos"
+        tools:layout="@layout/alojamientos_fragment" />
+    <fragment
+        android:id="@+id/nav_puntos_informacion"
+        android:name="com.turismo.malagapp.ui.puntosinformacion.PuntosInformacionFragment"
+        android:label="@string/menu_puntos_informacion"
+        tools:layout="@layout/puntos_informacion_fragment" />
+
+
+</navigation>

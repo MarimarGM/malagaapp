@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".Acerca_De">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageMarimar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/imagen_circular_marimar" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:text="@string/nombre_Marimar"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageDani"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/imagen_circular_dani" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/textView3"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/nombre_Dani"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageMarcos"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/imagen_circular_marcos" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:id="@+id/textView"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/nombre_Marcos"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageJesus"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/imagen_circular_jesus" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:id="@+id/textView4"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/nombre_Jesus"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="271dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

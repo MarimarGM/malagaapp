@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/menu_home" />
+
+    <item android:title="¿Que ver?">
+        <menu>
+            <group
+                android:id="@+id/menu_que_ver"
+                android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_museos"
+                android:icon="@drawable/ic_museos_white_24dp"
+                android:title="@string/menu_museos" />
+            <item
+                android:id="@+id/nav_monumentos"
+                android:icon="@drawable/ic_monumentos_white_24dp"
+                android:title="@string/menu_monumentos" />
+            <item
+                android:id="@+id/nav_cultura"
+                android:icon="@drawable/ic_culture_white_24dp"
+                android:title="@string/menu_cultura" />
+            <item
+                android:id="@+id/nav_naturaleza"
+                android:icon="@drawable/ic_nature_white_24dp"
+                android:title="@string/menu_naturaleza" />
+            <item
+                android:id="@+id/nav_otros"
+                android:icon="@drawable/ic_otros_white_24dp"
+                android:title="@string/menu_otros" />
+            </group>
+
+        </menu>
+    </item>
+
+        <item android:title="Ocio">
+            <menu>
+                <group
+                    android:id="@+id/menu_ocio"
+                    android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_centros_comerciales"
+                    android:icon="@drawable/ic_centros_comerciales_white_24dp"
+                    android:title="@string/menu_centros_comerciales"/>
+                <item
+                    android:id="@+id/nav_restaurantes"
+                    android:icon="@drawable/ic_restaurantes_white_24dp"
+                    android:title="@string/menu_restaurantes"/>
+                <item
+                    android:id="@+id/nav_luxury"
+                    android:icon="@drawable/ic_luxury_white_24dp"
+                    android:title="@string/menu_luxury"/>
+                </group>
+            </menu>
+        </item>
+
+    <item
+        android:id="@+id/nav_playas"
+        android:icon="@drawable/ic_playas_white_24dp"
+        android:title="@string/menu_playas"/>
+    <item
+        android:id="@+id/nav_alojamientos"
+        android:icon="@drawable/ic_alojamientos_white_24dp"
+        android:title="@string/menu_alojamientos"/>
+    <item
+        android:id="@+id/nav_puntos_informacion"
+        android:icon="@drawable/ic_info_white_24dp"
+        android:title="@string/menu_puntos_informacion"/>
+
+    </group>
+</menu>

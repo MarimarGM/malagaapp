@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1976D2"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:id="@+id/idImagenItem"
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/desc_imagen"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"/>
+        <LinearLayout
+            android:id="@+id/linear_parent"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+            <LinearLayout
+                android:id="@+id/linear_left_row"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/button_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/llamar"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/button_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_location_on_black_24dp"
+                    android:text="@string/como_llegar"
+                    android:textColor="#FFFFFF"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_right_row"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/button_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_site_black_24dp"
+                    android:text="Website"
+                    android:textColor="#FFFFFF"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/button_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:text="Email"
+                    android:textColor="#FFFFFF"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textAlignment="textStart">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textStyle="italic"
+                    android:lineSpacingMultiplier="1.5"
+                    android:id="@+id/idDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis at velit quis fringilla. Morbi molestie scelerisque lacus sed tempus. Vestibulum sit amet scelerisque elit. Suspendisse potenti. Aenean vehicula tortor aliquet tellus efficitur molestie. Morbi congue lorem dolor, sit amet bibendum quam tempor id. Donec dictum turpis urna, et luctus augue consequat et. In hac habitasse platea dictumst. Maecenas pellentesque nec ligula porttitor lobortis. Donec id dolor in velit pretium venenatis sit amet rutrum eros. Proin hendrerit massa eros, a consequat arcu ornare nec. Nam quis ligula sed ipsum blandit lobortis in molestie sem. Nam id tellus et nibh blandit consectetur.  Morbi eget justo diam. Maecenas convallis ante nunc, vel semper ipsum posuere eget. Etiam vel purus risus. Fusce consequat risus eu lobortis vestibulum. Aliquam at libero venenatis, porta mi quis, luctus nisl. Nam ultricies nunc et commodo molestie. In vitae laoreet urna. Etiam euismod dignissim tortor, ornare commodo elit tincidunt at. Donec lorem mauris, volutpat et nunc luctus, dictum gravida odio.  Duis cursus ultrices aliquet. Phasellus egestas metus ut odio pretium consectetur. Duis enim massa, feugiat id blandit vel, commodo non ex. Suspendisse potenti. Suspendisse ac mauris et urna placerat mollis. In eleifend vestibulum odio, eu feugiat mi convallis eget. Sed magna erat, tincidunt sit amet velit ut, ornare cursus diam. Sed iaculis semper accumsan. In at posuere felis, vel mattis sem. Etiam tempus ligula quis felis aliquet faucibus. Aliquam quis est tincidunt, euismod orci a, imperdiet enim. Vestibulum et elementum tellus, eget consectetur nunc. Donec bibendum dui vitae euismod accumsan. Pellentesque feugiat dignissim lobortis.  Fusce sed ullamcorper eros, non vulputate tortor. Fusce at porta tellus, et vestibulum mauris. Curabitur est dui, tempor ac turpis ut, hendrerit ullamcorper ante. Nullam suscipit suscipit ex quis eleifend. Curabitur maximus, metus in efficitur egestas, ante massa fringilla sem, non scelerisque augue neque in massa. Curabitur faucibus consectetur leo, id egestas justo semper ut. Sed volutpat nunc sit amet volutpat dictum. Aliquam id mauris sit amet urna condimentum aliquam ut sit amet arcu. Duis eleifend tortor a sapien vehicula, quis dignissim nunc vestibulum.  Nam vestibulum, elit quis varius maximus, augue tellus malesuada dolor, eget faucibus enim velit commodo tortor. Suspendisse potenti. Cras tincidunt velit leo, quis feugiat diam eleifend in. Mauris tristique imperdiet sodales. Nunc ut mattis urna. Maecenas id arcu purus. Morbi bibendum faucibus nisl sed ultricies. Phasellus rhoncus convallis massa sit amet facilisis. Integer porttitor fringilla nunc quis tempor. Suspendisse hendrerit neque eu finibus suscipit. Duis pellentesque dolor vitae odio venenatis bibendum. Sed felis nisi, commodo a elit sed, feugiat pellentesque arcu."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
